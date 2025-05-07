@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fire Starter Planner</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+
+  <div>
+    <label for="tinder">Choose Tinder:</label>
+    <select id="tinder">
+      <option value="" selected disabled> --Select--</option>
+      <option value="Dry Grass">Dry Grass</option>
+      <option value="Cotton Wool">Cotton Wool</option>
+      <option value="Birch Bark">Birch Bark</option>
+      <option value="Wet Leaves">Wet Leaves</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="kindling">Choose Kindling:</label>
+    <select id="kindling">
+      <option value="" selected disabled> --Select--</option>
+      <option value="Small Twigs">Small Twigs</option>
+      <option value="Split Sticks">Split Sticks</option>
+      <option value="Newspaper">Newspaper</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="fuel">Choose Fuel Wood:</label>
+    <select id="fuel">
+      <option value="" selected disabled >--Select--</option>
+      <option value="Pine Wood">Pine Wood</option>
+      <option value="Oak Wood">Oak Wood</option>
+      <option value="Birch Wood">Birch Wood</option>
+    </select>
+  </div>
+
+  <button onclick="calculateFire()">Start Fire</button>
+
+  <h2>Your Fire:</h2>
+  <p id="start-time">Time to Start Fire: --</p>
+  <p id="burn-time">Estimated Burn Time: --</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
